@@ -1,0 +1,480 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+
+/*html, body {
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  overflow-x:hidden;
+}*/
+
+body {
+  background: #eeeeee;
+  background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: -moz-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: -o-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: -ms-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: linear-gradient(top, #eeeeee, #cccccc 100%);
+  background-attachment:fixed;
+  z-index: 1
+}
+
+#container2{
+
+}
+
+
+#little  {
+position: fixed;
+  text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  margin-left: 260px;
+  margin-top: 120px;
+  height: 11px;
+font-family: 'Miss Fajardose', cursive;
+font-size: 45px;
+z-index: 5
+
+}
+
+#known{ 
+position: fixed;
+
+    margin-left: 130px;
+    margin-top: 130px;
+height: 150px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+font-size: 150px;
+z-index: 3
+
+}
+
+#secrets {
+position: fixed;
+  margin-left:  510px;
+  margin-top: 280px;
+font-family: 'Cutive Mono', serif;
+font-size: 40px;
+   color: transparent;
+   text-shadow: 0 0 25px rgba(0,0,0,0.0);
+   z-index: 4
+}
+
+#secrets { -webkit-transition: all 7s ease-in-out; }
+#little { -webkit-transition: all 5s ease-in-out; }
+
+#container:hover #secrets {
+  color: black;
+  -webkit-transform: text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -moz-transform:    text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -ms-transform:     text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -o-transform:      text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  transform:         text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+/*   color: transparent;*/
+
+}
+
+/*<div class=​"drop skrollable skrollable-between" data-6500=​"left:​15%;​bottom:​100%;​" 
+data-9500=​"bottom:​0%;​" style=​"left:​ 15%;​ bottom:​ 30.13333333333334%;​">​linear​</div>​*/
+
+
+#container:hover #little  {
+    color: rgba(255, 255, 255, 0);
+  -webkit-transform: text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  -moz-transform:    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  -ms-transform:     text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  -o-transform:      text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  transform:         text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+}
+
+
+/*
+font-family: 'Questrial', sans-serif;
+font-family: 'Lustria', serif;
+font-family: 'Brawler', serif;
+font-family: 'Habibi', serif;
+font-family: 'Cutive Mono', serif;
+font-family: 'Stalemate', cursive;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Bilbo', cursive;
+font-family: 'Kameron', serif;
+font-family: 'Antic Didone', serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Muli',
+ sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Miss Fajardose', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Carrois Gothic SC', sans-serif;
+font-family: 'Varela', sans-serif;
+font-family: 'Fjord One', serif;
+font-family: 'Cinzel', serif;
+*/
+
+/*???
+font-family: 'Seymour One', sans-serif;
+font-family: 'Sonsie One', cursive;
+font-family: 'Coda Caption', sans-serif;
+font-family: 'Days One', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Balthazar', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Alef', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+  
+  
+
+/*#text {
+font-family: 'Oswald', serif;
+  font-size: 38px;
+}*/
+
+.nice {
+font-family: 'EB Garamond', serif;
+  font-size: 39px;
+}
+body {
+
+  /*font: 13px/1.5 "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;*/
+}
+
+
+
+
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------photo test-----------------------*/
+.line1 {
+  margin-top: 850px;
+  position: fixed;
+
+
+z-index: 3
+
+}
+
+.line2 {
+
+    margin-top: 850px;
+  position: fixed;
+
+
+z-index: 3
+  
+}
+.line3 {
+
+    margin-top: 850px;
+  position: fixed;
+
+
+z-index: 3
+  
+}
+.line4 {
+    margin-top: 850px;
+  position: fixed;
+
+
+z-index: 3
+  
+}
+.line5 {
+    margin-top: 850px;
+  position: fixed;
+
+
+z-index: 3
+  
+}
+.line6 {
+    margin-top: 850px;
+  position: fixed;
+
+
+z-index: 3
+  
+}
+
+#container2{
+
+  font-family: 'Oswald', serif;
+  font-size: 38px;
+  margin-top: 800px;
+  height: 600px;
+
+}
+
+#container2 p{
+   display: inline;
+}
+
+
+#scene {
+  z-index: 500
+   cursor: pointer;
+  display: none;
+   height: 350px;
+   width: 450px;
+   margin:  0 auto 400px auto;
+   -webkit-perspective: 1300;
+   -moz-perspective: 1300;
+   -o-perspective: 1300;
+   -ms-perspective: 1300;
+   perspective: 1300;
+
+}
+
+
+
+
+
+.card {
+   position: absolute;
+   height: 450px;
+   width: 450px;
+   margin: 0 auto;
+   -webkit-transform-style: preserve-3d;;
+   -moz-transform-style: preserve-3d;;
+   -o-transform-style: preserve-3d;;
+   -ms-transform-style: preserve-3d;;
+   transform-style: preserve-3d;
+}
+
+
+/*.card.bigger {
+   position: absolute;
+   height: 400px;
+   width: 400px;
+   left: 75px;
+   top: 250px;
+   -webkit-transform-style: preserve-3d;;
+   -moz-transform-style: preserve-3d;;
+   -o-transform-style: preserve-3d;;
+   -ms-transform-style: preserve-3d;;
+   transform-style: preserve-3d;
+   -webkit-transform: scale(2);
+   -moz-transform: scale(2);
+   -o-transform: scale(2);
+   -ms-transform: scale(2);
+   transform: scale(2);
+ }*/
+
+.side {
+  cursor: pointer;
+   position: absolute;
+   height: inherit;
+   width: inherit;
+}
+
+.front{
+    box-shadow: -5px 5px 5px #aaa;
+  border-style:solid;
+    border-width:1px;
+
+}
+.back {
+    box-shadow: -5px 5px 5px #aaa;
+    border-style:solid;
+    border-width:1px;
+    padding: 10px;
+   background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+   transform: rotateX(180deg);
+}
+
+
+.card {
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -ms-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  -ms-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+   transition-duration: 0.75s;
+}
+
+.card.flipped {
+        -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+   transform: rotateX(180deg);
+}
+
+.card:hover {
+
+           -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+   transform: rotateX(180deg);
+}
+
+
+
+   .side {
+    margin: auto, 0;
+    font-family: helvetica, serif;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+
+
+/*-------------------------------NAV BAR-----------------------*/
+
+
+.test{
+  margin-top: 750px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-style: helvetica, "sans serif";
+  font-size: 45px;
+  color: transparent;
+  text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+ 
+
+}
+
+
+.secret {
+   z-index: 400
+  width: 25px;
+  height: 60px;
+  color: transparent; 
+  font-size: 85px;
+  font-family: "Alef", serif;
+  cursor: pointer;
+  text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+
+/*       'width':25 +'px',
+        'height':60+'px',
+        // 'background-color': 'black'
+        'color': 'transparent',
+        'font-size': 85+'px',
+        'font-family': 'Alef, serif',
+        'cursor':'pointer',
+        // 'text-shadow': 'rgba ('+255+','+ 255+','+ 255+','+ 0+')'*/
+
+
+}
+.secret { -webkit-transition: all 0.2s ease-in-out; }
+
+.secret:hover{
+
+    color: rgba(255, 255, 255, 1);
+  -webkit-transform: text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -moz-transform:    text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -ms-transform:     text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -o-transform:      text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  transform:         text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  
+  
+}
+#secret_window {
+  position: relative;
+  height: 600px;  
+  width: 960px;
+
+
+}
+
+
+/*------------STORy---------------------
+*/
+
+a,
+button {
+  cursor: pointer !important;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 16px;
+/*  float:right*/
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 19px;
+
+}
+
+h5 {
+  font-size: 17px;
+}
+
+
+}
+
+h6 {
+  font-size: 19px;
+  position: absolute;
+}
+
+
+
+
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}

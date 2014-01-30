@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Little Known Secrets</title>
+
+
+<link href='http://fonts.googleapis.com/css?family=Questrial|Lustria|Brawler|Habibi|Cutive+Mono|Stalemate|Istok+Web|Bilbo|Kameron|Antic+Didone|Josefin+Slab|Muli|EB+Garamond|Monsieur+La+Doulaise|Miss+Fajardose|Raleway|Roboto|Oswald|Montserrat:400,700|Carrois+Gothic+SC|Varela|Fjord+One|Cinzel|Seymour+One|Sonsie+One|Coda+Caption:800|Days+One|Roboto+Condensed|Balthazar|Roboto|Alef|Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/960.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+</head>
+<!-- <embed src="lks.mp3" autostart="true" hidden="true" loop="true">  -->
+</head>
+
+<body>
+
+
+
+<!-- ################## TITLE WORDS + CONTAINER ############################ -->
+
+	<div id = "container" class = "container_16">
+	
+		<div id = "little" class ="grid_16" data-150="top: 0%;"data-260="top: -100% position: absolute;"  >
+			<p>Little</p>
+		</div> 
+ 		<div id = "known" class = "grid_6" data-30="top: 0%; position: absolute;" data-260="top: -100%" >
+			<p>KNOWN</p>
+		</div> 
+			<div id = "secrets" class = "grid_10" data-0="top: 0%;" data-100="top: -100% position: absolute;" >
+			<p>secrets</p>
+		</div> 
+
+
+	</div>   <!-- end container div -->
+
+
+<!-- #####################  skroller text about secrets  ###################### -->
+
+<div id = "container2" class = "container_16">
+	<div class = "line1" data-160="top: 0%; position: absolute;" data-520="top: -80%">
+	<p id = "text">Secrecy is at its heart a</p>
+	<p id = "text" >paradox. </p>
+	<p id = "text"> Its vitality resides not simply in 
+	</div>
+		<div class ="line2" data-150="top: 0%; position: absolute;" data-600="top: -80%">
+			the act of concealment. For a secret to have real meaning,
+		</div>
+		<div class = "line3" data-140="top: 0%; position: absolute;" data-680="top: --75%">
+			it requires a suspicion that something is hidden. To complicate
+		</div>
+		<div class = "line4" data-130="top: 0%; position: absolute;" data-750="top: --67%">
+			 matters further, the true power of a secret is realized only
+			</div>
+			<div class = "line5" data-120="top: 0%; position: absolute;" data-820="top: -55%">
+			 upon its disclosure. At which point, its vigor drains as quickly
+			</div>
+			<div class = "line6" data-110="top: 0%; position: absolute;" data-900="top: -40%"> as the knowledge spreads.</p>
+			</div>
+
+</div> 
+
+
+
+
+
+<!-- ################# ORIG CANIPE SELECTOR TeXT ###################### -->
+<!-- $.each(CONTENT, function(i, item) {
+  $("#mainContent").append(
+      "<div class='name'>"+item.Name+"</div>"+
+      "<img class='photo' src='"+item.ImageDV+"'/>"
+   );
+}); -->
+
+<!-- ############# CANIPE SELECTOR BROKEN INTO TWO PIECES ############### -->
+
+<!-- $.each(CONTENT, function(i, item) {
+  $(".front").append(
+      "<img class='photo' src='"+item.Image+"'/>"
+   );
+});
+
+$.each(CONTENT, function(i, item) {
+  $(".back").append(
+       "<p class = 'text' >"+item.text+"</p>"
+   );
+}); -->
+
+
+<!-- ################# CONTAINER FOR  QUESTION MARKS  ################## -->
+
+
+
+<div class = "container_16" id = "secret_window">
+	<div id="scene" > 
+   <div class="card">
+      <div class="front side">
+      </div>
+      <div class="back side">
+      	<p></p>
+      	
+      </div>
+    </div> <!-- end card -->
+</div> <!-- end scene -->
+</div>
+
+
+
+<!-- ################# DIV MAKER + RANDOM POSITIONER ################## -->
+
+ <script>
+for (var i=1; i<62; ++i ){
+(function makeDiv(){
+    // var divsize = ((Math.random()*100) + 50).toFixed();
+    // var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    $newdiv = $('<div/ class = "secret" data = '+i+'>').css({
+        // 'width':25 +'px',
+        // 'height':60+'px',
+        // // 'background-color': 'black'
+        // 'color': 'transparent',
+        // 'font-size': 85+'px',
+        // 'font-family': 'Alef, serif',
+        // 'cursor':'pointer',
+        // // 'text-shadow': 'rgba ('+255+','+ 255+','+ 255+','+ 0+')'
+        // <div class="secret" data=‘“+i+”’ style="position: absolute; left: 525px; top: 31px;">?</div>
+    });
+  
+    var posx = (Math.random() * ($('div#secret_window').width() - 25)).toFixed();
+    var posy = (Math.random() * ($('div#secret_window').height() - 60)).toFixed();
+    $newdiv.append("?");
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none'
+    }).appendTo( 'div#secret_window' ).fadeIn(100).delay(300, function(){
+       $(this);
+
+    }); 
+})();
+};
+
+
+
+// ################ JSON DATA "CONTENT" (labelled: image for relative link to image, and text for the text) ####################
+var CONTENT = [
+  {
+    "image":"images/img-1.jpg",
+    "text":"Here's a secret: Join Fazoli's eFamily and you get a free spaghetti meal."
+  },
+  {
+    "image":"images/img-2.jpg",
+    "text":"When life gives you basil, make basil lemonade! It's not on the Main Squeeze menu, but you can order your own if basil is available - now that's a delicious secret."
+  },
+  {
+    "image":"images/img-3.jpg",
+    "text":"The Museum of Art and Archaeology on the quad has a linocut by Henri Matisse from 1938!"
+  },
+  {
+    "image":"images/img-4.jpg",
+    "text":"Fancy a tropical vacation mid-week? Head over to Los Margaritos for $1 margaritas!"
+  },
+  {
+    "image":"images/img-5.jpg",
+    "text":"Fun little secret: people call this sculpture outside the public library \"French Fries\".There used to be another scuplture resembling fish bones and together they were \"Fish and Chips\"!"
+  },
+  {
+    "image":"images/img-6.jpg",
+    "text":"This mural is a staple of the North Arts District. Anyone know who the artist is? Tweet your answers!"
+  },
+  {
+    "image":"images/img-7.jpg",
+    "text":"Psst! Mary Paxton Keeley Elementary was named after the Missouri School of Journalism's first female graduate. This plaque can be found in MU's Gannett Hall!"
+  },
+  {
+    "image":"images/img-8.jpg",
+    "text":"Recognize this place? Slackers is now where Uptown Theatre used to be! This photo is from 1956. Currently from left to right: Eastside Tavern, El Rancho, Slackers."
+  },
+  {
+    "image":"images/img-9.jpg",
+    "text":"Eastside Tavern is even more hip than you think. In 1999, The Clash's Joe Strummer stopped by Eastside for a drink after a gig at The Blue Note with his band The Mescaleros. Pictured is Eastside owner Sal Nuccio, Strummer, and his guitarist at the time."
+  },
+  {
+    "image":"images/img-10.jpg",
+    "text":"Who recognizes this building? It's the old Academic Hall! Did you know during the Civil War, Union troops occupied the building to guard the university?"
+  },
+  {
+    "image":"images/img-11.jpg",
+    "text":"The piano player at Murray's, which was almost called Miles, as in Miles Davis."
+  },
+  {
+    "image":"images/img-12.jpg",
+    "text":"You can subscribe to weekly boxes full of local produce at the Root Cellar, a downtown grocery store! This fall includes squash, turnips and more from area farmers."
+  },
+  {
+    "image":"images/img-13.jpg",
+    "text":"This is the headstone of one of two Revolutionary War veterans in Columbia Cemetery. Well...he has two headstones"
+  },
+  {
+    "image":"images/img-14.jpg",
+    "text":"Which former mid-Missouri resident created the#Kewpie, which is the mascot for Hickman High School?"
+  },
+  {
+    "image":"images/img-15.jpg",
+    "text":"Behind the bar at Booche's are seven open bottles of Bud and two of Jameson. These are here in honor of the \"elite regulars\" who have passed away. It is said that the evaporated alcohol is really just the men's ghosts returning to finish their drink."
+  },
+  {
+    "image":"images/img-16.jpg",
+    "text":"MU's Museum of Anthropology houses one of the world's largest and most comprehensive archery collections, featuring over 5,000 pieces."
+  },
+  {
+    "image":"images/img-17.jpg",
+    "text":"Recognize these Ikea cult classics, CoMo? If not, you may start spying them more next year--there's a store opening near KC next fall! (The closest one now's in Bolingbrook, Illinois.)"
+  },
+  {
+    "image":"images/img-18.jpg",
+    "text":"Did you know the architect of the St. Louis Gateway Arch designed a building in Columbia? Finnish architect Eero Saarinen also designed Stephens College's Firestone Baars Chapel!"
+  },
+  {
+    "image":"images/img-19.jpg",
+    "text":"Ellis is the biggest library in MU's system, which is the biggest in the state. "
+  },
+  {
+    "image":"images/img-20.jpg",
+    "text":"The view from a little-known study nook in Memorial Union."
+  },
+  {
+    "image":"images/img-21.jpg",
+    "text":"Glik's is the only store in�#CoMo�that carries Vineyard Vines, according to assistant manager@ashleygoldberg1. Hump day shopping, anyone?"
+  },
+  {
+    "image":"images/img-22.jpg",
+    "text":"#VoxLKS: Columbia Area Career Center culinary arts teacher Brook Harlan competed on the inaugural season of The Next Food Network Star."
+  },
+  {
+    "image":"images/img-23.jpg",
+    "text":"It's not just about the burgers--Booche's used to have a literary magazine, too!"
+  },
+  {
+    "image":"images/img-24.jpg",
+    "text":"This is the first edition of The Professional World, one of the first black newspapers in the U.S. It was published here in Columbia and you can check it out at the State Historical Society."
+  },
+  {
+    "image":"images/img-25.jpg",
+    "text":"An inside look at the 60-80 acre underground warehouse off of Stadium"
+  },
+  {
+    "image":"images/img-26.jpg",
+    "text":"Many MU namesakes can be found in Columbia Cemetery. Including Switzler, Rollins, Lowry and Swallow."
+  },
+  {
+    "image":"images/img-27.jpg",
+    "text":"Frequency makes a good looking mocha right? It tastes better than it looks. Get ready to learn more!"
+  },
+  {
+    "image":"images/img-28.jpg",
+    "text":"Three pumps chai with three pumps pumpkin makes an off the menu pumpkin pie in a cup at Starbucks. The Tall will run you $4.07 at the downtown location."
+  },
+  {
+    "image":"images/img-29.jpg",
+    "text":"Check out the invite to the formal opening of the Daniel Boone Tavern! Walter Williams was scheduled to give a speech!"
+  },
+  {
+    "image":"images/img-30.jpg",
+    "text":"Are you lost, little one? Mizzou's CAFNR offers a \"captive wild animal management\" minor, which provides hands-on experience with exotic animals!"
+  },
+  {
+    "image":"images/img-32.jpg",
+    "text":"The newly remodeled McDonald's on Business Loop was selected by founder Ray Kroc to be the fast food chain's 171st restaurant in the nation. There are now 5 other Mickey D's in CoMo. (Six if you count the one in Walmart!)"
+  },
+  {
+    "image":"images/img-33.jpg",
+    "text":"Here's a snapshot of a page from the Real Simple August 2001 issue featuring Little Dixie Lake!"
+  },
+  {
+    "image":"images/img-34.jpg",
+    "text":"Legend has it a young woman named Sarah June Wheeler haunts Stephens College's Historic Senior Hall. Find out why on Dec. 5."
+  },
+  {
+    "image":"images/img-35.jpg",
+    "text":"Columbia College was the first female college west of the Mississippi! It was originally called Christian Female College."
+  },
+  {
+    "image":"images/img-36.jpg",
+    "text":"Ernie's has been around since the '30s... And it used to serve dinner! Find out more about the menu and location Dec. 5th!"
+  },
+  {
+    "image":"images/img-37.jpg",
+    "text":"This vending machine stands where a mysterious silo used to run through Switzler Hall.The silo was gutted in 2011. Silo photo courtesy: cf.missouri.edu"
+  },
+  {
+    "image":"images/img-38.jpg",
+    "text":"While at the Forum MKT trial make sure you enjoy the nature. Like this huge grasshopper."
+  },
+  {
+    "image":"images/img-39.jpg",
+    "text":"This is the antipode of Columbia. An antipode is the point on the opposite side of the world."
+  },
+  {
+    "image":"images/img-40.jpg",
+    "text":"MU played its first football game on Thanksgiving Day in 1890 against Wash U. The Tigers got gobbled 28-0. Photo credit MU archives"
+  },
+  {
+    "image":"images/img-41.jpg",
+    "text":"MU's Swallow Hall got partially destroyed by a tornado in 1931. Photo courtesy of the UMC Archives."
+  },
+  {
+    "image":"images/img-42.jpg",
+    "text":"This wasn't always Broadway Diner's location. But the building always was. Find out how Dec. 5! "
+  },
+  {
+    "image":"images/img-43.jpg",
+    "text":"Wilson's Fitness Center in The District offers rooftop classes. Learn more about this little known workout spot in the Dec. 5th issue!"
+  },
+  {
+    "image":"images/img-44.jpg",
+    "text":"One part Stiracha and one part cucumber buttermilk dressing, this sauce, known as the Fat Kid Sauce, is an off the menu treat found at Bleu. For more irregular items that only regulars know, pick up a copy of on Dec. 5."
+  },
+  {
+    "image":"images/img-45.jpg",
+    "text":"MU history professor Steven Watts published a biography about Hugh Hefner in 2008. Read about his experiences meeting Mr. Playboy in the Dec. 5th issue."
+  },
+  {
+    "image":"images/img-46.jpg",
+    "text":"Broadway Diner serves off-menu items at night. Ask a waiter about it and you just might get a special recipe like this Veggie Doomwich."
+  },
+  {
+    "image":"images/img-47.jpg",
+    "text":"Columbia residents raised $50,000 to pay for Jesse Hall. After Academic Hall burnt to the ground in 1892 leaving nothing but the remaining columns, the possibility of moving MU to another location surfaced. This money is the reason MU still calls Columbia home."
+  },
+  {
+    "image":"images/img-48.jpg",
+    "text":"Missouri Theater is said to be haunted. Find out about the legend on Dec. 5."
+  },
+  {
+    "image":"images/img-49.jpg",
+    "text":"The front page of the Aug 28th issue of the Missourian was recognized by The Newseum as one of the Top Ten Designs of the Day."
+  },
+  {
+    "image":"images/img-50.jpg",
+    "text":"The Missouri Theatre celebrated its grand opening Oct. 5, 1928 with performances from Bob Hope, the Rockettes (back when they were based out of St. Louis) and notes of congratulations from Charlie Chaplin."
+  },
+  {
+    "image":"images/img-51.jpg",
+    "text":"This is the floor plan of Gordon House, the oldest standing house in Boone County. It is on the National Register of Historic Places. Photo Courtesy: National Register"
+  },
+  {
+    "image":"images/img-52.jpg",
+    "text":"Gunther's Games has big plans for the future... Find out what they are in the Dec. 5 issue!"
+  },
+  {
+    "image":"images/img-53.jpg",
+    "text":"The Big Burr Oak Tree in McBaine, Mo. is 30 minutes away via car, an hour and 24 minutes via bike and a 4 hour 55 minute walk."
+  },
+  {
+    "image":"images/img-54.jpg",
+    "text":"The first page of Tennessee Williams' entry to the Mahan short story competition!"
+  },
+  {
+    "image":"images/img-55.jpg",
+    "text":"The house in the horror film You're Next is in Columbia! A gate is being built around it to ward off curious moviegoers."
+  },
+  {
+    "image":"images/img-56.jpg",
+    "text":"The Rome wasn't always a restaurant. When it was first built the building served as the very first automobile dealership in town"
+  },
+  {
+    "image":"images/img-57.jpg",
+    "text":"25 years after the Giants won the Super Bowl for the first time the team held a reunion. One of the men in this picture lives in CoMo and plays an active role in the town. Can you guess who it is?"
+  },
+  {
+    "image":"images/img-58.jpg",
+    "text":"Walk in front of the Chancellor's Residence and you're walking on what once was Lake Saint Mary. Find out what happened to it on Dec. 5."
+  },
+  {
+    "image":"images/img-59.jpg",
+    "text":"International Tap House allows its customers to bring in food from other restaurants - a rare allowance, indeed!"
+  },
+  {
+    "image":"images/img-60.jpg",
+    "text":"Hey Supernatural fans! You know that guy that thinks he's god, Chuck Shurley? Well the actor, Rob Benedict, was born and raised here!"
+  },
+  {
+    "image":"images/img-61.jpg",
+    "text":"William Smith (not the Fresh Prince one) was born and raised in CoMo and happens to be the very last Marlboro man!"
+  },
+  {
+    "image":"images/img-62.jpg",
+    "text":"This flower shop has made arrangements for several big time celebrities. Can you guess who?"
+  }
+]
+
+
+
+// ############ CLICKING TRIGGERS ################
+
+
+// $(".secret").click(function()  {
+//   var index = $(this).attr("data");  
+//   $(“#photoDiv”).html(“<img class=‘photo’ src=‘“+CONTENT[index].image+”’/>”);
+// });
+
+
+// <input id="input" type="text" value="0">
+// <a id="btn" href="#">click me</a>
+
+
+
+
+// ########### applies photo to front and secret text to back of flippy card #############
+
+$(".secret").click(function()  {
+  var index = $(this).attr("data");  
+  $(".front").html("<img src="+CONTENT[index].image+">");
+});
+
+$(".secret").click(function()  {
+  var index = $(this).attr("data");  
+  $(".back p").html(CONTENT[index].text);
+});
+
+
+
+
+
+
+// $("div.front").append(
+//    "<img class='photo' src=‘“+CONTENT[index].image+”’/>"
+
+// $(".secret").click(function()  {
+//   var index = $(this).attr(“data”);  
+//   $(“div.front”).append(“<img class=‘photo’ src=‘“+CONTENT[index].image+”’/>”);
+// });
+
+
+
+
+// $(".secret").click(function()  {
+//   var index = $(this).attr(“data”);  
+//   $("div.front").append(“<img src=‘“+CONTENT[index].image+”’/>”);
+// });
+// $(".secret").click(function()  {
+//   var index = $(this).attr(“data”);  
+//   $("div.back").append(“<p ‘“+CONTENT[index].text+”’/>”);
+// });
+// $("button").click(function() {
+// 	alert("you suck")
+//   // $(this).hide( 300 );
+// });
+
+// $("button").click(function() {
+//   $("#scene").hide( 2000 );
+// });
+
+
+$( ".side" ).click(function() {
+  $( "div#scene" ).fadeOut( 2000 );
+});
+
+// for (var i=1; i<62; i++)
+$(".secret").click(function()  {
+   $(this).parent();
+   $( "div#scene" ).fadeIn( 2000 ).fadeOut( 10000 ).hide(100);
+   $(this).remove();
+});
+
+// $(document).ready(function(){ 
+//   var divCount = $("div").length;
+// });
+
+
+// $.each(CONTENT, function(i, item) {
+//   $("div.front").append(
+//       "<img class='photo' src='"+item.image+"'/>"
+//    );
+// });
+
+// $.each(CONTENT, function(i, item) {
+//   $("div.back").append(
+//        "<p class = 'words' >"+item.text+"</p>"
+//    );
+// });
+</script>
+
+
+
+<!-- // $( '<div'+[i]+'/>' ).click(function() {
+//   $( "div#scene" ).show( 1200 );
+//   $('<div'+[i]+'/>').remove();
+// });
+</script> -->
+
+<!-- $(".tryout").click(function()  {
+   $(this).parent();
+   $( "div#scene" ).show( 1200 );
+   $(this).parent().remove();
+}); -->
+
+<!-- ################ SKROLLR CALL ####################### -->
+	<script type="text/javascript" src="dist/skrollr.min.js"></script>
+	<script type="text/javascript">
+	 window.onload = function() {
+	 	skrollr.init({
+	 		forceHeight: true
+	 	});
+	}
+	</script>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

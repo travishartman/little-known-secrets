@@ -1,0 +1,153 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+  background: #eeeeee;
+  background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: -moz-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: -o-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: -ms-linear-gradient(top, #eeeeee, #cccccc 100%);
+  background: linear-gradient(top, #eeeeee, #cccccc 100%);
+  background-attachment:fixed;
+  z-index: 1
+}
+
+#container{
+
+}
+#little  {
+position: fixed;
+  text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  margin-left: 260px;
+  margin-top: 120px;
+  height: 11px;
+font-family: 'Miss Fajardose', cursive;
+font-size: 45px;
+z-index: 2
+
+}
+
+
+#known{ 
+position: fixed;
+
+    margin-left: 130px;
+    margin-top: 130px;
+height: 150px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+font-size: 150px;
+z-index: 3
+
+}
+
+#secrets {
+position: fixed;
+  margin-left:  510px;
+  margin-top: 280px;
+font-family: 'Cutive Mono', serif;
+font-size: 40px;
+   color: transparent;
+   text-shadow: 0 0 25px rgba(0,0,0,0.0);
+   z-index: 4
+}
+
+#secrets { -webkit-transition: all 10s ease-in-out; }
+#little { -webkit-transition: all 7s ease-in-out; }
+
+
+#container:hover #secrets {
+  color: black;
+  -webkit-transform: text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -moz-transform:    text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -ms-transform:     text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  -o-transform:      text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+  transform:         text-shadow: 0 0 0px rgba(255, 255, 255, 1);
+/*   color: transparent;*/
+
+}
+
+#container:hover #little  {
+    color: transparent;
+  -webkit-transform: text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  -moz-transform:    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  -ms-transform:     text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  -o-transform:      text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  transform:         text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+
+#scene {
+   height: 768px;
+   width: 960px;
+   -webkit-perspective: 1300;
+   -moz-perspective: 1300;
+   -o-perspective: 1300;
+   -ms-perspective: 1300;
+   perspective: 1300;
+
+}
+
+.card {
+   position: absolute;
+   height: 400px;
+   width: 400px;
+   left: 75px;
+   top: 250px;
+   -webkit-transform-style: preserve-3d;;
+   -moz-transform-style: preserve-3d;;
+   -o-transform-style: preserve-3d;;
+   -ms-transform-style: preserve-3d;;
+   transform-style: preserve-3d;
+}
+
+.side {
+   position: absolute;
+   height: inherit;
+   width: inherit;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+   transform: rotateY(180deg);
+}
+
+.card {
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -ms-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -ms-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+   transition-duration: 1.5s;
+}
+
+.card.flipped {
+       -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+   transform: rotateY(180deg);
+}
+
+
+
+   .side {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+   backface-visibility: hidden;
+}

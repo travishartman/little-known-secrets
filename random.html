@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Little Known Secrets</title>
+
+
+<link href='http://fonts.googleapis.com/css?family=Questrial|Lustria|Brawler|Habibi|Cutive+Mono|Stalemate|Istok+Web|Bilbo|Kameron|Antic+Didone|Josefin+Slab|Muli|EB+Garamond|Monsieur+La+Doulaise|Miss+Fajardose|Raleway|Roboto|Oswald|Montserrat:400,700|Carrois+Gothic+SC|Varela|Fjord+One|Cinzel|Seymour+One|Sonsie+One|Coda+Caption:800|Days+One|Roboto+Condensed|Balthazar|Roboto|Alef|Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/960.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+</head>
+
+<body>
+<script>
+
+
+for (var i=0; i<25; ++i ){
+(function makeDiv(){
+    // var divsize = ((Math.random()*100) + 50).toFixed();
+    // var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    $newdiv = $('<div'+[i]+'/>').css({
+        'width':25 +'px',
+        'height':60+'px',
+        // 'background-color': 'black'
+        'color': 'transparent',
+        'font-size': 85+'px',
+        'font-family': 'Alef, serif',
+        'cursor':'pointer',
+        // 'text-shadow': 'rgba'(255, 255, 255, 0),
+    });
+  
+    var posx = (Math.random() * ($(document).width() - 25)).toFixed();
+    var posy = (Math.random() * ($(document).height() - 60)).toFixed();
+    $newdiv.append("?");
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none'
+    }).appendTo( 'body' ).fadeIn(100).delay(300, function(){
+       $(this);
+
+    }); 
+})();
+};
+
+</script>
+
+<script>
+
+
+</script>
+
+<script>
+
+</script>
+
+
+</body>
+
+
+</html>
+<!-- 
+####################### WORKING CODE - repeat 25 times #######################W
+for (var i=0; i<25; ++i ){
+(function makeDiv(){
+    // var divsize = ((Math.random()*100) + 50).toFixed();
+    // var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    $newdiv = $('<div'+[i]+'/>').css({
+        'width':40 +'px',
+        'height':40+'px',
+        // 'background-color': 'black'
+        'color': 'black',
+        'font-size': 45+'px',
+        'font-family': 'Alef, serif'
+    });
+  
+    var posx = (Math.random() * ($(document).width() - 40)).toFixed();
+    var posy = (Math.random() * ($(document).height() - 40)).toFixed();
+    $newdiv.append("?");
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none'
+    }).appendTo( 'body' ).fadeIn(100).delay(300, function(){
+       $(this);
+
+    }); 
+})();
+}; -->
+
+
+
+
+<!--ORIG CODE 
+(function makeDiv(){
+    var divsize = ((Math.random()*100) + 50).toFixed();
+    var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    $newdiv = $('<div/>').css({
+        'width':divsize+'px',
+        'height':divsize+'px',
+        'background-color': color
+    });
+    
+    var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+    var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+    
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none'
+    }).appendTo( 'body' ).fadeIn(100).delay(300).fadeOut(200, function(){
+       $(this).remove();
+       makeDiv(); 
+    }); 
+})();
+
+ -->
+
+
+
+

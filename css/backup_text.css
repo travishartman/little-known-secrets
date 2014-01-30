@@ -1,0 +1,147 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+/*@font-face {
+    font-family: 'collegebold';
+    src: url('type/collegeb-webfont.eot');
+    src: url('type/collegeb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('css/type/collegeb-webfont.woff') format('woff'),
+         url('type/collegeb-webfont.ttf') format('truetype'),
+         url('type/collegeb-webfont.svg#collegebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+  
+  
+#head, #month, #day { 
+  font-family: "collegebold", "Helvetica Neue", serif; 
+      }
+
+
+
+body {
+  font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+pre,
+code {
+  font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+
+hr {
+  border: 0 solid #ccc;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+ #container {
+   margin-right: 50px;
+/*   background-color: blue;
+*/}
+
+#container div p{ 
+  margin-top:0px;
+  height:178px;
+}
+
+#head {
+  margin:0;
+  font-size: 250px;
+/*  background-color: red
+*/}
+#month {
+  height:110px;
+  margin-top: 80px;
+  margin-left: 85px;
+  font-size: 105px;
+  background-color: blue
+}
+#month div p{
+  margin: 0px;
+}
+
+#blank {
+  margin: 0px;
+  background-color: purple;
+}
+
+#day {
+  height:20px;
+  margin-left: 45px;
+  font-size: 80px;
+/*  background-color: green;  
+*/}
+#day div p{
+  margin-top: 0px;
+  height: 200px;
+} 
+
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
